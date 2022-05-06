@@ -2,24 +2,20 @@
 
 # Project Title
 
-* **One Sentence Summary** Ex: This repository holds an attempt to assist user to predict an ondemand positive and negative ratio of reviews with the help of data collected from the desired sites and applying deep leanring model on them. 
-* 
-* apply GloVe model and BERT model to predict the overall ratio of positive and 
-"Get Rich" Kaggle challenge (provide link). 
+* **One Sentence Summary** Ex: This repository holds an attempt to assist user to predict an ondemand positive and negative ratio of reviews with the help of data collected from the desired sites and applying deep leanring model on them.  
 
 ## Overview
 
-* This section could contain a short paragraph which include the following:
-  * **Definition of the tasks / challenge**  Ex: The task, as defined by the Kaggle challenge is to use a time series of 12 features, sampled daily for 1 month, to predict the next day's price of a stock.
+  * **Definition of the tasks / challenge**  
   * The task, as defined by the kaggle challenges is to use BERT Model and GloVe model to predict the reviews' sentiment. 
-  * **Your approach** Ex: The approach in this repository formulates the problem as regression task, using deep recurrent neural networks as the model with the full time series of features as input. We compared the performance of 3 different network architectures.
+  * **Your approach**
   * The approach in this repository is to use both model for same dataset and compare the perfomance of the two model and use the best model of the two for prediction. 
   * For example: GloVe might works best for one dataset and BERT model might works best for the other dataset. 
-  * **Summary of the performance achieved** Ex: Our best model was able to predict the next day stock price within 23%, 90% of the time. At the time of writing, the best performance on Kaggle of this metric is 18%.
+  * **Summary of the performance achieved** GloVe was achieved able to achieved 79% accuracy while BERT model is still in the training phase.
 
 ## Summary of Workdone
 
-Step1: Take user input for name of the product (and input for the platform/website)
+Step1: Take user input for name of the product and input for the platform/website
       For ex: Name of the product: counter strike, Platform/website: steam 
 Step2: Create the test dateset via webscraping
 Step3: Use the best trained model to predict the test dataset
@@ -35,7 +31,7 @@ Step3: Use the best trained model to predict the test dataset
 
 #### Preprocessing / Clean up
 
-* Describe any manipulations you performed to the data.
+manipulations performed to the data:
 Removed urls, emojis, html tags and punctuations,
 Tokenized the tweet base texts,
 Lower cased clean text,
@@ -47,7 +43,10 @@ Converted tokenized text to string again.
 
 #### Data Visualization
 
-Show a few visualization of the data and say a few words about what you see.
+![](./Assets/Game_NotR_CommonBigram.png)
+![](./Assets/Rest_NotR_CommonWord.png)
+![](./Assets/Rest_WordAmount.png)
+![](./Assets/Rest_R_Punctuation count.png)
 
 ### Problem Formulation
 
