@@ -64,12 +64,16 @@ Converted tokenized text to string again.
 
 * Describe the training:
   * How you trained: software and hardware.
-  * Local computer
-  * How did training take.
+    Local computer
+  * How long did training take.
+    Training took at least 1 hour
   * Training curves (loss vs epoch for test/train).
+    The loss decreases as the epoch increases for the training dataset
   * How did you decide to stop training.
+    After 10 epochs after no improvement in accuracy score
   * Any difficulties? How did you resolve them?
-  * Both model training 
+    Model takes to much time to load.
+  
 
 ### Performance Comparison
 
@@ -86,22 +90,12 @@ Converted tokenized text to string again.
 * In future, we will create a new python file that takes the input from the user regarding the product and search the product in the platform and scrape reveiw out of it and gives review ratio on one go. 
 * Similarly, additional platform/websites can be added such as movie from IMDB
 
-## How to reproduce results
-
-* In this section, provide instructions at least one of the following:
-   * Reproduce your results fully, including training.
-   * Apply this package to other data. For example, how to use the model you trained.
-   * Use this package to perform their own study.
-* Also describe what resources to use for this package, if appropirate. For example, point them to Collab and TPUs.
-
 ### Overview of files in repository
 
-* Resturant: 
-* Game:
-* Assets:
-* 
-
-* Note that all of these notebooks should contain enough text for someone to understand what is happening.
+* Resturant: contains two deep leaning model with training and testing
+* Webscraping: contains two platform to scrape the data from which are Yelp and Steam
+* Assets: contains images of preprocessing and cleaning from Cleaning files
+* Cleaning: contains preprocessing and cleaning steps
 
 ### Software Setup
 * keras, scikit learn, NLTK are the important packages used
