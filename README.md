@@ -3,7 +3,7 @@
 
 # Project Title
 
-* **One Sentence Summary** Ex: This repository holds an attempt to assist user to give an ondemand positive and negative ration of reviews with the help of data collected from the 
+* **One Sentence Summary** Ex: This repository holds an attempt to assist user to predict an ondemand positive and negative ratio of reviews with the help of data collected from the desired sites and applying deep leanring model on them. 
 * 
 * apply GloVe model and BERT model to predict the overall ratio of positive and 
 "Get Rich" Kaggle challenge (provide link). 
@@ -12,25 +12,39 @@
 
 * This section could contain a short paragraph which include the following:
   * **Definition of the tasks / challenge**  Ex: The task, as defined by the Kaggle challenge is to use a time series of 12 features, sampled daily for 1 month, to predict the next day's price of a stock.
+  * The task, as defined by the kaggle challenges is to use BERT Model and GloVe model to predict the reviews' sentiment. 
   * **Your approach** Ex: The approach in this repository formulates the problem as regression task, using deep recurrent neural networks as the model with the full time series of features as input. We compared the performance of 3 different network architectures.
+  * The approach in this repository is to use both model for same dataset and compare the perfomance of the two model and use the best model of the two for prediction. 
+  * For example: GloVe might works best for one dataset and BERT model might works best for the other dataset. 
   * **Summary of the performance achieved** Ex: Our best model was able to predict the next day stock price within 23%, 90% of the time. At the time of writing, the best performance on Kaggle of this metric is 18%.
 
 ## Summary of Workdone
 
-Include only the sections that are relevant an appropriate.
+Step1: Take user input for name of the product (and input for the platform/website)
+      For ex: Name of the product: counter strike, Platform/website: steam 
+Step2: Create the test dateset via webscraping
+Step3: Use the best trained model to predict the test dataset
 
 ### Data
 
-* Data:
+* Data(for training):
   * Type: For example
-    * Input: medical images (1000x1000 pixel jpegs), CSV file: image filename -> diagnosis
-    * Input: CSV file of features, output: signal/background flag in 1st column.
+    * Input for Steam:2GB csv file, unknown data points, contains 2 features i.e. review(as text) and target value(0 or 1)
+    * Input for Yelp: 410mb csv file,560,000 data points, contains 2 features i.e. review(as text) and target value(0 or 1)  .
   * Size: How much data?
-  * Instances (Train, Test, Validation Split): how many data points? Ex: 1000 patients for training, 200 for testing, none for validation
+  * Instances (Train, Test, Validation Split): how many data points? Ex: 80% data points for training, 20% data points for testing, none for validation
 
 #### Preprocessing / Clean up
 
 * Describe any manipulations you performed to the data.
+Removed urls, emojis, html tags and punctuations,
+Tokenized the tweet base texts,
+Lower cased clean text,
+Removed stopwords,
+Applied part of speech tags,
+Converted part of speeches to wordnet format,
+Applying word lemmatizer,
+Converted tokenized text to string again.
 
 #### Data Visualization
 
@@ -38,16 +52,21 @@ Show a few visualization of the data and say a few words about what you see.
 
 ### Problem Formulation
 
-* Define:
-  * Input / Output
+* Define: Predict the review sentiment
+  * Input / Output: text data as input / ratio of positive and negative ratio 
   * Models
     * Describe the different models you tried and why.
+    * GloVe model: stands for Gloval Vectors for Word Representation
+    * BERT model: stands for Bidirectional Encoder Representations from Transformers
   * Loss, Optimizer, other Hyperparameters.
+  * GLoVe Model: binary_crossentropy loss function, Adam optimizer
+  * Bert Model: AdamW Optimizer
 
 ### Training
 
 * Describe the training:
   * How you trained: software and hardware.
+  * Local computer
   * How did training take.
   * Training curves (loss vs epoch for test/train).
   * How did you decide to stop training.
