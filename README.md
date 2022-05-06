@@ -46,7 +46,7 @@ Converted tokenized text to string again.
 ![](./Assets/Game_NotR_CommonBigram.png)
 ![](./Assets/Rest_NotR_CommonWord.png)
 ![](./Assets/Rest_WordAmount.png)
-![](./Assets/Rest_R_Punctuation count.png)
+![](./Assets/Rest_R_Punctuation_count.png)
 
 ### Problem Formulation
 
