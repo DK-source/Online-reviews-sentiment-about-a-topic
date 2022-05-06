@@ -2,7 +2,7 @@
 
 # Project Title
 
-* **One Sentence Summary** Ex: This repository holds an attempt to assist user to predict an ondemand positive and negative ratio of reviews with the help of data collected from the desired sites and applying deep leanring model on them.  
+* **One Sentence Summary**:This repository holds an attempt to assist user to predict an ondemand positive and negative ratio of reviews with the help of data collected from the desired sites and applying deep leanring model on them.  
 
 ## Overview
 
