@@ -71,6 +71,7 @@ Show a few visualization of the data and say a few words about what you see.
   * Training curves (loss vs epoch for test/train).
   * How did you decide to stop training.
   * Any difficulties? How did you resolve them?
+  * Both model training 
 
 ### Performance Comparison
 
@@ -83,9 +84,6 @@ Show a few visualization of the data and say a few words about what you see.
 * Good enough accuracy is obtained from GloVe model which can be used for the prediction of test dataset.
 
 ### Future Work
-
-* What would be the next thing that you would try.
-* What are some other studies that can be done starting from here.
 * In future, we will create a new python file that takes the input from the user regarding the product and search the product in the platform and scrape reveiw out of it and gives review ratio on one go. 
 * Similarly, additional platform/websites can be added such as movie from IMDB
 
@@ -99,45 +97,34 @@ Show a few visualization of the data and say a few words about what you see.
 
 ### Overview of files in repository
 
-* Describe the directory structure, if any.
-* List all relavent files and describe their role in the package.
-* An example:
-  * utils.py: various functions that are used in cleaning and visualizing data.
-  * preprocess.ipynb: Takes input data in CSV and writes out data frame after cleanup.
-  * visualization.ipynb: Creates various visualizations of the data.
-  * models.py: Contains functions that build the various models.
-  * training-model-1.ipynb: Trains the first model and saves model during training.
-  * training-model-2.ipynb: Trains the second model and saves model during training.
-  * training-model-3.ipynb: Trains the third model and saves model during training.
-  * performance.ipynb: loads multiple trained models and compares results.
-  * inference.ipynb: loads a trained model and applies it to test data to create kaggle submission.
+* Resturant: 
+* Game:
 
 * Note that all of these notebooks should contain enough text for someone to understand what is happening.
 
 ### Software Setup
-* List all of the required packages.
-* If not standard, provide or point to instruction for installing the packages.
-* Describe how to install your package.
+* keras, scikit learn, NLTK are the important packages used
+* These packages can be installed using the command : pip install package_name
+
 
 ### Data
 
-* Point to where they can download the data.
+* Training data can be downloaded from kaggle with these link.
+* https://www.kaggle.com/code/datafan07/disaster-tweets-nlp-eda-bert-with-transformers#Building-the-Bert-Model
+* https://www.kaggle.com/code/shahules/basic-eda-cleaning-and-glove#Data-Cleaning
+
 * Lead them through preprocessing steps, if necessary.
 
 ### Training
 
-* Describe how to train the model
-
-#### Performance Evaluation
-
-* Describe how to run the performance evaluation.
+* GloVe model can be trained on local computer. However, BERT Model being too computationally intensive is difficult to train on local computer. 
 
 
 ## Citations
 
 * Provide any references.
-
-
+https://www.kaggle.com/code/datafan07/disaster-tweets-nlp-eda-bert-with-transformers#Building-the-Bert-Model
+https://www.kaggle.com/code/shahules/basic-eda-cleaning-and-glove#Data-Cleaning
 
 
 
