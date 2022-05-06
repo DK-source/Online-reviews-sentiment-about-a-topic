@@ -29,7 +29,7 @@ Step3: Use the best trained model to predict the test dataset
 
 * Data(for training):
   * Type: For example
-    * Input for Steam:2GB csv file, unknown data points, contains 2 features i.e. review(as text) and target value(0 or 1)
+    * Input for Steam:2GB csv file, 9.5 Million data points, contains 2 features i.e. review(as text) and target value(0 or 1)
     * Input for Yelp: 410mb csv file,560,000 data points, contains 2 features i.e. review(as text) and target value(0 or 1)  .
   * Size: How much data?
   * Instances (Train, Test, Validation Split): how many data points? Ex: 80% data points for training, 20% data points for testing, none for validation
@@ -86,6 +86,8 @@ Show a few visualization of the data and say a few words about what you see.
 
 * What would be the next thing that you would try.
 * What are some other studies that can be done starting from here.
+* In future, we will create a new python file that takes the input from the user regarding the product and search the product in the platform and scrape reveiw out of it and gives review ratio on one go. 
+* Similarly, additional platform/websites can be added such as movie from IMDB
 
 ## How to reproduce results
 
