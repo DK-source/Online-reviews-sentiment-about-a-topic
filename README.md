@@ -3,7 +3,9 @@
 
 # Project Title
 
-* **One Sentence Summary** Ex: This repository holds an attempt to apply LSTMs to Stock Market using data from
+* **One Sentence Summary** Ex: This repository holds an attempt to assist user to give an ondemand positive and negative ration of reviews with the help of data collected from the 
+* 
+* apply GloVe model and BERT model to predict the overall ratio of positive and 
 "Get Rich" Kaggle challenge (provide link). 
 
 ## Overview
