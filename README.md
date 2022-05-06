@@ -60,7 +60,7 @@ Show a few visualization of the data and say a few words about what you see.
     * BERT model: stands for Bidirectional Encoder Representations from Transformers
   * Loss, Optimizer, other Hyperparameters.
   * GLoVe Model: binary_crossentropy loss function, Adam optimizer
-  * Bert Model: AdamW Optimizer
+  * Bert Model: AdamW Optimizer, 
 
 ### Training
 
@@ -74,13 +74,13 @@ Show a few visualization of the data and say a few words about what you see.
 
 ### Performance Comparison
 
-* Clearly define the key performance metric(s).
-* Show/compare results in one table.
+* Accuracy matrix is used as the key performance metric(s).
+* Training accuracy of more than 79% was obtained for GloVe model and Bert model being computationally intesive is still in the training phase.
 * Show one (or few) visualization(s) of results, for example ROC curves.
 
 ### Conclusions
 
-* State any conclusions you can infer from your work. Example: LSTM work better than GRU.
+* Good enough accuracy is obtained from GloVe model which can be used for the prediction of test dataset.
 
 ### Future Work
 
