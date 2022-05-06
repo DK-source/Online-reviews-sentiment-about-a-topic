@@ -98,6 +98,8 @@ Converted tokenized text to string again.
 
 * Resturant: 
 * Game:
+* Assets:
+* 
 
 * Note that all of these notebooks should contain enough text for someone to understand what is happening.
 
